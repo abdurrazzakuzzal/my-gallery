@@ -29,7 +29,7 @@ const ViewImage = () => {
                 <Grid item xs={12} md={6} textAlign={"end"}>
                     <img
                         src={data?.cid ? `https://dweb.link/ipfs/${data?.cid}/${data?.file_name}` : "https://i.pinimg.com/originals/1c/13/f3/1c13f3fe7a6bba370007aea254e195e3.gif"}
-                        srcSet={`https://dweb.link/ipfs/${data?.cid}?w=161&fit=crop&auto=format&dpr=2 2x`}
+                        srcSet={`https://dweb.link/ipfs/${data?.cid}/${data?.file_name}`}
                         alt={data?.cid}
                         loading="lazy"
                         width={"350px"}
